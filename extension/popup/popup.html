@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GhostFrame</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../icons/48.png" alt="" width="24" height="24" />
+      <h1>GhostFrame</h1>
+      <span id="badge" class="pill">–</span>
+    </header>
+
+    <section id="idle" hidden>
+      <p>Open <b>Google Meet</b>, <b>Microsoft Teams</b> or <b>Zoom</b> in this browser and turn on your camera.</p>
+      <p class="muted">If the meeting was already open, reload it once after installing GhostFrame.</p>
+    </section>
+
+    <section id="live" hidden>
+      <button id="invisible" class="primary"></button>
+      <p class="muted center">Or hold an <b>open palm</b> to the camera for half a second, or press <kbd id="shortcut">Alt+Shift+G</kbd>.</p>
+
+      <div class="row">
+        <span>Background</span>
+        <span id="bgText" class="muted"></span>
+      </div>
+      <div class="bar"><div id="bgBar"></div></div>
+      <p id="bgHint" class="muted small"></p>
+
+      <div class="buttons">
+        <button id="capture" title="Step out of view for 3 seconds to capture a perfect background">Capture empty room</button>
+        <button id="relearn" title="Forget the background and learn it again">Relearn</button>
+      </div>
+      <p id="perf" class="muted small"></p>
+    </section>
+
+    <section class="settings">
+      <label><input type="checkbox" id="enabled" /> Enabled</label>
+      <label><input type="checkbox" id="gestures" /> Open-palm gesture</label>
+    </section>
+    <footer class="muted small">All video processing stays on this device. <span id="version"></span></footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

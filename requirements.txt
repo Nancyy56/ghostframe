@@ -1,0 +1,8 @@
+# opencv-contrib-python (not opencv-python): MediaPipe depends on the contrib
+# build, and having both installed causes cv2 import conflicts.
+opencv-contrib-python==5.0.0.93
+numpy==2.5.4
+mediapipe==1.1.1
+# Optional: realistic fill of never-seen background (LaMa). Without it GhostFrame
+# falls back to a basic blur-like fill.
+onnxruntime==1.31.0

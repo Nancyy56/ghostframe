@@ -1,0 +1,19 @@
+{
+  "name": "ghostframe-extension",
+  "version": "0.3.0",
+  "private": true,
+  "description": "GhostFrame browser extension: disappear from your webcam in Google Meet, Teams and Zoom (web) with an open-palm gesture.",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/fetch-assets.mjs",
+    "test": "node --test tests/core.test.mjs && node tests/e2e.mjs",
+    "test:unit": "node --test tests/core.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@mediapipe/tasks-vision": "1.1.1",
+    "onnxruntime-web": "^1.30.0",
+    "puppeteer-core": "25.16.0"
+  }
+}

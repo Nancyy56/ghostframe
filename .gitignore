@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+backgrounds/
+models/
+extension/node_modules/
+extension/vendor/
+extension/models/
+extension/dist/
